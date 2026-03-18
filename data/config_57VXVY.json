@@ -1,0 +1,124 @@
+{
+  "num_sites": 200,
+  "hours": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "site_types": {
+    "Macro": 0.8,
+    "Indoor": 0.2
+  },
+  "cells_per_site": {
+    "3": 0.5,
+    "6": 0.3,
+    "12": 0.2
+  },
+  "technology_mix": {
+    "LTE_only": 0.2,
+    "NR_only": 0.3,
+    "mixed": 0.5
+  },
+  "frequency_bands": {
+    "LTE": [
+      700,
+      800,
+      1800,
+      2100,
+      2600
+    ],
+    "NR": [
+      700,
+      3500,
+      3700
+    ]
+  },
+  "coverage": {
+    "Macro": {
+      "rsrp_mean": -95,
+      "rsrp_std": 8,
+      "min": -120,
+      "max": -70
+    },
+    "Indoor": {
+      "rsrp_mean": -85,
+      "rsrp_std": 6,
+      "min": -105,
+      "max": -60
+    }
+  },
+  "interference": {
+    "prob_low": 0.5,
+    "prob_medium": 0.3,
+    "prob_high": 0.2
+  },
+  "traffic_pattern": {
+    "peak_hours": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "off_peak_factor": 0.3,
+    "peak_factor": 1.0
+  },
+  "voice": {
+    "volte_user_ratio": 0.3,
+    "vonr_user_ratio": 0.4,
+    "call_attempts_per_user_per_hour": 0.5,
+    "call_duration_min": 2.0,
+    "quality_good_prob": 0.7
+  },
+  "battery": {
+    "base_drain_mah_per_user": 100,
+    "extra_drain_poor_coverage": 50,
+    "extra_drain_high_interference": 30,
+    "extra_drain_high_tx_power": 40
+  },
+  "events": {
+    "outage_probability": 0.001,
+    "outage_duration_hours": [
+      1,
+      2,
+      3
+    ],
+    "load_balancing_threshold": 80,
+    "load_balancing_effect_reduction": 0.2,
+    "massive_event": {
+      "outdoor_cluster_prob": 0.01,
+      "indoor_building_prob": 0.005,
+      "traffic_multiplier": 3.0,
+      "duration_hours": 4
+    }
+  },
+  "seed": 42
+}
