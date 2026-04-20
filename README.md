@@ -27,6 +27,7 @@ Instead of reacting to alarms, engineers can:
 
 Below is how the prediction engine works at a high level:
 
+---
 ```mermaid
 flowchart TD
     A["Live network counters<br/>every hour"] --> B["Feature engine<br/>+ lag features, + event flags"]
@@ -36,9 +37,6 @@ flowchart TD
     E -->|Yes| F["🚨 Alert: potential congestion"]
     E -->|No| G["✅ Normal operations"]
 ```
-
-*$(No ML jargon needed - just a clear picture of inputs ↔ output ↔ action.)*
-
 ---
 
 ## Business Impact  
